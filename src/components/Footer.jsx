@@ -4,6 +4,6 @@ export default function Footer( {items}) {
   const checkedItems = items.filter((item) => item.checked).length;
   const percentChecked = totalItems === 0 ? 0 : Math.round((checkedItems / totalItems) * 100);
   return (
-   <footer className="stats">Ada {totalItems} barang di daftar belanjaan, {checkedItems} barang sudah dibeli ({percentChecked}%)</footer>
+   <footer className="stats">Ada {totalItems} barang di daftar belanjaan, {checkedItems} jenis barang sudah dibeli ({percentChecked}%)</footer>
   )
 }
